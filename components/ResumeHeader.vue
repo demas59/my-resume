@@ -1,15 +1,21 @@
 <template>
   <div>
     <div class="titre text-white position-absolute mw-100">
-      <h1>
-        <strong>{{ $t('name') }}:</strong>
-        Aymeric De Massary
-      </h1>
-      <h2>Developpeur Web</h2>
+      <h1>{{ profil.firstname + ' ' + profil.lastname }}</h1>
+      <h2>{{ profil.sujet }}</h2>
     </div>
     <img src="../assets/mountain.png" alt="mountain.png" />
   </div>
 </template>
+
+<script>
+import { mapState } from 'vuex'
+export default {
+  computed: {
+    ...mapState(['profil']),
+  },
+}
+</script>
 
 <style scoped>
 img {

@@ -12,7 +12,15 @@
 </template>
 
 <script>
-export default {}
+import { mapActions } from 'vuex'
+export default {
+  created() {
+    this.fetchProfil()
+  },
+  methods: {
+    ...mapActions(['fetchProfil']),
+  },
+}
 </script>
 
 <style>

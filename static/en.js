@@ -1,4 +1,7 @@
 export default {
-  name: 'fullname',
-  firstname: 'firstname',
+  contact: 'Contact',
+  competence: 'Skills',
+  education: 'Education',
+  experience: 'Experiences',
+  langues: 'Languages',
 }
