@@ -1,6 +1,8 @@
 <template>
   <div class="menu">
-    <img class="img-menu" src="../assets/profil.jpg" alt="profil.jpg" />
+    <div class="d-flex justify-content-center text-white">
+      <img class="img-menu" src="../assets/profil.jpg" alt="profil.jpg" />
+    </div>
   </div>
 </template>
 
@@ -17,7 +19,6 @@ export default {}
 .img-menu {
   width: 50%;
   height: auto;
-  display: block;
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
